@@ -1,0 +1,2780 @@
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "5741b95b779a8144",
+  "time": "2022-09-07T09:20:17Z",
+  "traceId": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "fbc7bda7a9224979",
+  "time": "2022-09-07T09:20:17Z",
+  "traceId": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "fbc7bda7a9224979",
+  "time": "2022-09-07T09:20:20Z",
+  "traceId": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "5741b95b779a8144",
+  "time": "2022-09-07T09:20:20Z",
+  "traceId": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:20:20.169075568Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:20:17.164118463Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:20:20.169052202Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "fbc7bda7a9224979",
+  "spanID": "72b274ff7400b398",
+  "startTime": "2022-09-07T09:20:17.163736722Z",
+  "time": "2022-09-07T09:20:20Z",
+  "traceID": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:20:20.169463417Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:20:17.163596455Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:20:20.169264108Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "5741b95b779a8144",
+  "spanID": "fbc7bda7a9224979",
+  "startTime": "2022-09-07T09:20:17.163563356Z",
+  "time": "2022-09-07T09:20:20Z",
+  "traceID": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T09:20:20.169691035Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:20:17.162023483Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:20:20.16950025Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "5741b95b779a8144",
+  "startTime": "2022-09-07T09:20:17.161905352Z",
+  "time": "2022-09-07T09:20:20Z",
+  "traceID": "41fb2ab1468a7029bbcd17560dd4e089"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "c8b0ba2513fd1fab",
+  "time": "2022-09-07T09:27:53Z",
+  "traceId": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "495401ca0d12c4aa",
+  "time": "2022-09-07T09:27:53Z",
+  "traceId": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "495401ca0d12c4aa",
+  "time": "2022-09-07T09:27:56Z",
+  "traceId": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "c8b0ba2513fd1fab",
+  "time": "2022-09-07T09:27:56Z",
+  "traceId": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:27:56.480053877Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:27:53.473431583Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:27:56.480047926Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "495401ca0d12c4aa",
+  "spanID": "668253b67f10faa0",
+  "startTime": "2022-09-07T09:27:53.473114817Z",
+  "time": "2022-09-07T09:27:56Z",
+  "traceID": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "attr": [
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    },
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:27:56.480426441Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:27:53.472919511Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:27:56.480247368Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "c8b0ba2513fd1fab",
+  "spanID": "495401ca0d12c4aa",
+  "startTime": "2022-09-07T09:27:53.472893239Z",
+  "time": "2022-09-07T09:27:56Z",
+  "traceID": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T09:27:56.480565043Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:27:53.471648321Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:27:56.480464085Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "c8b0ba2513fd1fab",
+  "startTime": "2022-09-07T09:27:53.471541945Z",
+  "time": "2022-09-07T09:27:56Z",
+  "traceID": "45b953ce1b4c8eb86d0075876413cf72"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "cbe9efbd5ae84c86",
+  "time": "2022-09-07T09:30:11Z",
+  "traceId": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "018cc266002b7bf4",
+  "time": "2022-09-07T09:30:11Z",
+  "traceId": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "018cc266002b7bf4",
+  "time": "2022-09-07T09:30:14Z",
+  "traceId": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "cbe9efbd5ae84c86",
+  "time": "2022-09-07T09:30:14Z",
+  "traceId": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:30:14.848274765Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:30:11.842898539Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:30:14.848270521Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "018cc266002b7bf4",
+  "spanID": "fc74f0305696d369",
+  "startTime": "2022-09-07T09:30:11.84272679Z",
+  "time": "2022-09-07T09:30:14Z",
+  "traceID": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "attr": [
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    },
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:30:14.848550396Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:30:11.842562461Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:30:14.848347006Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "cbe9efbd5ae84c86",
+  "spanID": "018cc266002b7bf4",
+  "startTime": "2022-09-07T09:30:11.842539381Z",
+  "time": "2022-09-07T09:30:14Z",
+  "traceID": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T09:30:14.848698814Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:30:11.841480681Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:30:14.848586687Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "cbe9efbd5ae84c86",
+  "startTime": "2022-09-07T09:30:11.841347158Z",
+  "time": "2022-09-07T09:30:14Z",
+  "traceID": "0ccb7ab20de85a33c809ebeeba7961cf"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "1260c2b0bea4faa2",
+  "time": "2022-09-07T09:32:57Z",
+  "traceId": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "cd81b7df6b3db0fc",
+  "time": "2022-09-07T09:32:57Z",
+  "traceId": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "cd81b7df6b3db0fc",
+  "time": "2022-09-07T09:33:00Z",
+  "traceId": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "1260c2b0bea4faa2",
+  "time": "2022-09-07T09:33:00Z",
+  "traceId": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:33:00.380541035Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:32:57.372999721Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:33:00.380516246Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "cd81b7df6b3db0fc",
+  "spanID": "2c4da30dda85220d",
+  "startTime": "2022-09-07T09:32:57.372699183Z",
+  "time": "2022-09-07T09:33:00Z",
+  "traceID": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:33:00.380824203Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:32:57.372496264Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:33:00.380644273Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "1260c2b0bea4faa2",
+  "spanID": "cd81b7df6b3db0fc",
+  "startTime": "2022-09-07T09:32:57.372335403Z",
+  "time": "2022-09-07T09:33:00Z",
+  "traceID": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T09:33:00.380969568Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:32:57.371188147Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:33:00.380847909Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "1260c2b0bea4faa2",
+  "startTime": "2022-09-07T09:32:57.371111168Z",
+  "time": "2022-09-07T09:33:00Z",
+  "traceID": "e05acfcef664728a4c93d4f020d4e36f"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "45fa4b33865d3626",
+  "time": "2022-09-07T09:38:21Z",
+  "traceId": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "d6ea13a9433bc559",
+  "time": "2022-09-07T09:38:21Z",
+  "traceId": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "d6ea13a9433bc559",
+  "time": "2022-09-07T09:38:24Z",
+  "traceId": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "45fa4b33865d3626",
+  "time": "2022-09-07T09:38:24Z",
+  "traceId": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:38:24.492762625Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:38:21.485848864Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:38:24.492755625Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "d6ea13a9433bc559",
+  "spanID": "284256149c036983",
+  "startTime": "2022-09-07T09:38:21.485419821Z",
+  "time": "2022-09-07T09:38:24Z",
+  "traceID": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:38:24.493004344Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:38:21.485104945Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:38:24.492859441Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "45fa4b33865d3626",
+  "spanID": "d6ea13a9433bc559",
+  "startTime": "2022-09-07T09:38:21.484952711Z",
+  "time": "2022-09-07T09:38:24Z",
+  "traceID": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T09:38:24.493129249Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:38:21.48311522Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:38:24.493032006Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "45fa4b33865d3626",
+  "startTime": "2022-09-07T09:38:21.483011918Z",
+  "time": "2022-09-07T09:38:24Z",
+  "traceID": "c31c8deecad4c21c92fc29158f73e29c"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "a68387734865275f",
+  "time": "2022-09-07T09:46:05Z",
+  "traceId": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "dba640cbc10662a0",
+  "time": "2022-09-07T09:46:05Z",
+  "traceId": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "dba640cbc10662a0",
+  "time": "2022-09-07T09:46:08Z",
+  "traceId": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "a68387734865275f",
+  "time": "2022-09-07T09:46:08Z",
+  "traceId": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:46:08.972239305Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:46:05.965767275Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:46:08.972233819Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "dba640cbc10662a0",
+  "spanID": "bb680e669833773f",
+  "startTime": "2022-09-07T09:46:05.965538833Z",
+  "time": "2022-09-07T09:46:08Z",
+  "traceID": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T09:46:08.97252484Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:46:05.965333237Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:46:08.972382238Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "a68387734865275f",
+  "spanID": "dba640cbc10662a0",
+  "startTime": "2022-09-07T09:46:05.96528317Z",
+  "time": "2022-09-07T09:46:08Z",
+  "traceID": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T09:46:08.972678519Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:46:05.964785614Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T09:46:08.972562493Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "a68387734865275f",
+  "startTime": "2022-09-07T09:46:05.964715122Z",
+  "time": "2022-09-07T09:46:08Z",
+  "traceID": "09257d06852fad898de6b8be6377f0f4"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "127e506780e228f2",
+  "time": "2022-09-07T10:11:26Z",
+  "traceId": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "21549c0769bd3ff0",
+  "time": "2022-09-07T10:11:26Z",
+  "traceId": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "21549c0769bd3ff0",
+  "time": "2022-09-07T10:11:29Z",
+  "traceId": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "127e506780e228f2",
+  "time": "2022-09-07T10:11:29Z",
+  "traceId": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:11:29.6387024Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:11:26.630964869Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:11:29.638698325Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "21549c0769bd3ff0",
+  "spanID": "80809a2648207200",
+  "startTime": "2022-09-07T10:11:26.630446689Z",
+  "time": "2022-09-07T10:11:29Z",
+  "traceID": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:11:29.639002723Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:11:26.630342603Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:11:29.638861106Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "127e506780e228f2",
+  "spanID": "21549c0769bd3ff0",
+  "startTime": "2022-09-07T10:11:26.630318162Z",
+  "time": "2022-09-07T10:11:29Z",
+  "traceID": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T10:11:29.639241149Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:11:26.629695389Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:11:29.63909761Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "127e506780e228f2",
+  "startTime": "2022-09-07T10:11:26.629459366Z",
+  "time": "2022-09-07T10:11:29Z",
+  "traceID": "4a5424cf64fe991b34882e82ff9cf429"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "7607f40d1c00c095",
+  "time": "2022-09-07T10:21:54Z",
+  "traceId": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "d9d30c02b357bd5a",
+  "time": "2022-09-07T10:21:54Z",
+  "traceId": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "d9d30c02b357bd5a",
+  "time": "2022-09-07T10:21:59Z",
+  "traceId": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "7607f40d1c00c095",
+  "time": "2022-09-07T10:21:59Z",
+  "traceId": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:21:59.475661108Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:21:54.467023353Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:21:59.475657582Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "d9d30c02b357bd5a",
+  "spanID": "f92f25ab828cde53",
+  "startTime": "2022-09-07T10:21:54.466853407Z",
+  "time": "2022-09-07T10:21:59Z",
+  "traceID": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:21:59.475916461Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:21:54.466741796Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:21:59.475746187Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "7607f40d1c00c095",
+  "spanID": "d9d30c02b357bd5a",
+  "startTime": "2022-09-07T10:21:54.466721162Z",
+  "time": "2022-09-07T10:21:59Z",
+  "traceID": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T10:21:59.476051234Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:21:54.466388371Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:21:59.475950994Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "7607f40d1c00c095",
+  "startTime": "2022-09-07T10:21:54.466302878Z",
+  "time": "2022-09-07T10:21:59Z",
+  "traceID": "dd25816f95bdd73aaad38cc4f5c7b57d"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "ee57cf6459fa280c",
+  "time": "2022-09-07T10:38:37Z",
+  "traceId": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "5ed1716ad1cd3fad",
+  "time": "2022-09-07T10:38:37Z",
+  "traceId": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "5ed1716ad1cd3fad",
+  "time": "2022-09-07T10:38:42Z",
+  "traceId": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "ee57cf6459fa280c",
+  "time": "2022-09-07T10:38:42Z",
+  "traceId": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:38:42.857349092Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:38:37.851661119Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:38:42.857345848Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "5ed1716ad1cd3fad",
+  "spanID": "05982955e75e66f0",
+  "startTime": "2022-09-07T10:38:37.851265179Z",
+  "time": "2022-09-07T10:38:42Z",
+  "traceID": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:38:42.857521353Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:38:37.85105468Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:38:42.857422254Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "ee57cf6459fa280c",
+  "spanID": "5ed1716ad1cd3fad",
+  "startTime": "2022-09-07T10:38:37.851034628Z",
+  "time": "2022-09-07T10:38:42Z",
+  "traceID": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T10:38:42.857620183Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:38:37.850691276Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:38:42.857542514Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "ee57cf6459fa280c",
+  "startTime": "2022-09-07T10:38:37.850585391Z",
+  "time": "2022-09-07T10:38:42Z",
+  "traceID": "dc96a0075dd50032cb4f684cf913774d"
+}
+{
+  "level": "info",
+  "msg": "connecting to: :9999",
+  "opName": "begin",
+  "spanId": "10a56ea6fc0e7281",
+  "time": "2022-09-07T10:41:58Z",
+  "traceId": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "level": "info",
+  "msg": "calling say hello",
+  "opName": "sayHello-test",
+  "spanId": "692aa3870f94587c",
+  "time": "2022-09-07T10:41:58Z",
+  "traceId": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "level": "info",
+  "msg": "reply: Hello World",
+  "opName": "sayHello-test",
+  "spanId": "692aa3870f94587c",
+  "time": "2022-09-07T10:42:03Z",
+  "traceId": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "level": "info",
+  "msg": "after say hello success",
+  "opName": "begin",
+  "spanId": "10a56ea6fc0e7281",
+  "time": "2022-09-07T10:42:03Z",
+  "traceId": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "9999"
+      }
+    },
+    {
+      "Key": "rpc.grpc.status_code",
+      "Value": {
+        "Type": "INT64",
+        "Value": 0
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:42:03.748269275Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "SENT"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:41:58.740727572Z"
+    },
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 13
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:42:03.748266416Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "692aa3870f94587c",
+  "spanID": "2f3587decdcaab98",
+  "startTime": "2022-09-07T10:41:58.740303741Z",
+  "time": "2022-09-07T10:42:03Z",
+  "traceID": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "attr": [
+    {
+      "Key": "groupId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-test"
+      }
+    },
+    {
+      "Key": "instanceId",
+      "Value": {
+        "Type": "STRING",
+        "Value": "mysql-123fdf"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:42:03.748466025Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "calling say hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:41:58.740233325Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "reply: Hello World"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:42:03.748330653Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "sayHello-test",
+  "pSpanID": "10a56ea6fc0e7281",
+  "spanID": "692aa3870f94587c",
+  "startTime": "2022-09-07T10:41:58.740211616Z",
+  "time": "2022-09-07T10:42:03Z",
+  "traceID": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T10:42:03.748577101Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "connecting to: :9999"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:41:58.739689921Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "after say hello success"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:42:03.748488103Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "begin",
+  "pSpanID": "0000000000000000",
+  "spanID": "10a56ea6fc0e7281",
+  "startTime": "2022-09-07T10:41:58.739507836Z",
+  "time": "2022-09-07T10:42:03Z",
+  "traceID": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}

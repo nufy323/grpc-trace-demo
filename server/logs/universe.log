@@ -1,0 +1,181 @@
+{
+  "level": "info",
+  "msg": "Do something",
+  "opName": "doSomeThing",
+  "spanId": "9383974fd562df48",
+  "time": "2022-09-07T10:42:00Z",
+  "traceId": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "level": "info",
+  "msg": "saying Hello",
+  "opName": "api.HelloService/SayHello",
+  "spanId": "5339765bdf1c6baf",
+  "time": "2022-09-07T10:42:00Z",
+  "traceId": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T10:42:00.745912141Z",
+  "events": [
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "Do something"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:42:00.745423463Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "doSomeThing",
+  "pSpanID": "5339765bdf1c6baf",
+  "spanID": "9383974fd562df48",
+  "startTime": "2022-09-07T10:41:58.744078345Z",
+  "time": "2022-09-07T10:42:03Z",
+  "traceID": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
+{
+  "attr": null,
+  "endTime": "2022-09-07T10:42:03.747318302Z",
+  "events": null,
+  "level": "trace",
+  "links": [
+    {
+      "SpanContext": {
+        "TraceID": "33f5c3b2a74f62be5e466a9ab9314e4c",
+        "SpanID": "5339765bdf1c6baf",
+        "TraceFlags": "01",
+        "TraceState": "",
+        "Remote": false
+      },
+      "Attributes": null,
+      "DroppedAttributeCount": 0
+    }
+  ],
+  "logType": "span",
+  "msg": "",
+  "opName": "ticker",
+  "pSpanID": "0000000000000000",
+  "spanID": "e757539225883913",
+  "startTime": "2022-09-07T10:42:00.746323953Z",
+  "time": "2022-09-07T10:42:08Z",
+  "traceID": "d2def59783737a26e4301b85c7d95303"
+}
+{
+  "attr": [
+    {
+      "Key": "rpc.system",
+      "Value": {
+        "Type": "STRING",
+        "Value": "grpc"
+      }
+    },
+    {
+      "Key": "rpc.service",
+      "Value": {
+        "Type": "STRING",
+        "Value": "api.HelloService"
+      }
+    },
+    {
+      "Key": "rpc.method",
+      "Value": {
+        "Type": "STRING",
+        "Value": "SayHello"
+      }
+    },
+    {
+      "Key": "net.peer.ip",
+      "Value": {
+        "Type": "STRING",
+        "Value": "127.0.0.1"
+      }
+    },
+    {
+      "Key": "net.peer.port",
+      "Value": {
+        "Type": "STRING",
+        "Value": "35212"
+      }
+    }
+  ],
+  "endTime": "2022-09-07T10:42:03.74730531Z",
+  "events": [
+    {
+      "Name": "message",
+      "Attributes": [
+        {
+          "Key": "message.type",
+          "Value": {
+            "Type": "STRING",
+            "Value": "RECEIVED"
+          }
+        },
+        {
+          "Key": "message.id",
+          "Value": {
+            "Type": "INT64",
+            "Value": 1
+          }
+        },
+        {
+          "Key": "message.uncompressed_size",
+          "Value": {
+            "Type": "INT64",
+            "Value": 7
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:41:58.744064Z"
+    },
+    {
+      "Name": "log",
+      "Attributes": [
+        {
+          "Key": "log.severity",
+          "Value": {
+            "Type": "STRING",
+            "Value": "INFO"
+          }
+        },
+        {
+          "Key": "log.message",
+          "Value": {
+            "Type": "STRING",
+            "Value": "saying Hello"
+          }
+        }
+      ],
+      "DroppedAttributeCount": 0,
+      "Time": "2022-09-07T10:42:00.745954396Z"
+    }
+  ],
+  "level": "trace",
+  "links": null,
+  "logType": "span",
+  "msg": "",
+  "opName": "api.HelloService/SayHello",
+  "pSpanID": "2f3587decdcaab98",
+  "spanID": "5339765bdf1c6baf",
+  "startTime": "2022-09-07T10:41:58.743993065Z",
+  "time": "2022-09-07T10:42:08Z",
+  "traceID": "33f5c3b2a74f62be5e466a9ab9314e4c"
+}
