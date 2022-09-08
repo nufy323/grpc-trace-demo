@@ -8,11 +8,14 @@ import (
 )
 
 //log exporter export spans to log file
-func NewLogExporter() *logExporter {
-	return &logExporter{}
+func NewLogExporter(logger *log.Logger) *logExporter {
+	return &logExporter{
+		exportLogger: logger,
+	}
 }
 
 type logExporter struct {
+	exportLogger *log.Logger
 }
 
 func (le *logExporter) ExportSpans(ctx context.Context, spans []trace.ReadOnlySpan) error {
@@ -31,8 +34,8 @@ func (le *logExporter) Shutdown(ctx context.Context) error {
 	return nil
 }
 
-func (l *logExporter) logSpan(roSpan trace.ReadOnlySpan) {
-	log.WithFields(log.Fields{
+func (le *logExporter) logSpan(roSpan trace.ReadOnlySpan) {
+	le.exportLogger.WithFields(log.Fields{
 		"traceID":   roSpan.SpanContext().TraceID(),
 		"spanID":    roSpan.SpanContext().SpanID(),
 		"pSpanID":   roSpan.Parent().SpanID(),

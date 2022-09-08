@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/nufy323/grpc-demo/api"
+	"github.com/nufy323/grpc-demo/example/api"
 	"github.com/nufy323/grpc-demo/utrace"
 	"github.com/nufy323/grpc-demo/utrace/logger"
 
@@ -34,7 +34,7 @@ func (s *helloServer) SayHello(ctx context.Context, in *api.HelloRequest) (*api.
 		time.Sleep(3 * time.Second)
 		utrace.TraceLog(ctx).Infoln("async finish")
 	}(ctx)
-
+	utrace.SetSpanStatus(ctx, utrace.OK, "")
 	//do other things
 	time.Sleep(3 * time.Second)
 	return &api.HelloResponse{Reply: "Hello " + in.Greeting}, nil

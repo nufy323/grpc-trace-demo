@@ -3,6 +3,7 @@ package utrace
 import (
 	"context"
 
+	"github.com/nufy323/grpc-demo/utrace/logger"
 	"github.com/nufy323/grpc-demo/utrace/util"
 	log "github.com/sirupsen/logrus"
 	"go.opentelemetry.io/otel/codes"
@@ -56,7 +57,7 @@ const (
 	OK    SpanStatusCode = 2
 )
 
-func SetSpanCode(ctx context.Context, code SpanStatusCode, desc string) {
+func SetSpanStatus(ctx context.Context, code SpanStatusCode, desc string) {
 	span := trace.SpanFromContext(ctx)
 	if span == nil || !span.IsRecording() {
 		return
@@ -92,5 +93,5 @@ func AsyncSpan(ctx context.Context, subSys string, operationName string, attribu
 }
 
 func TraceLog(ctx context.Context) *log.Entry {
-	return log.WithContext(ctx)
+	return logger.Logger().WithContext(ctx)
 }

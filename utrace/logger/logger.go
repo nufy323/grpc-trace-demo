@@ -8,10 +8,22 @@ import (
 )
 
 const (
-	defaultOutFileName = "./logs/universe.log"
+	defaultOutFileName = "./logs/tracing.log"
 	defaultLogMaxSizeM = 500
 	defaultLogLevel    = "info"
 )
+
+var (
+	traceLogger   *log.Logger
+	isInitialized bool
+)
+
+func Logger() *log.Logger {
+	if !isInitialized {
+		panic("please call InitLogger initialization before use")
+	}
+	return traceLogger
+}
 
 func InitLogger(opts ...LoggerOption) {
 	cfg := LoggerConfig{}
@@ -32,10 +44,12 @@ func InitLogger(opts ...LoggerOption) {
 		cfg.Level = defaultLogLevel
 	}
 
-	log.SetFormatter(&log.JSONFormatter{
+	traceLogger = log.New()
+
+	traceLogger.SetFormatter(&log.JSONFormatter{
 		PrettyPrint: cfg.PrettyPrint,
 	})
-	log.SetOutput(&lumberjack.Logger{
+	traceLogger.SetOutput(&lumberjack.Logger{
 		Filename:   cfg.OutputFileName,
 		MaxSize:    cfg.MaxSize, // megabytes
 		MaxBackups: cfg.MaxBackups,
@@ -46,11 +60,11 @@ func InitLogger(opts ...LoggerOption) {
 	if err != nil {
 		panic(err)
 	}
-	log.SetLevel(logLevel)
-	log.SetReportCaller(cfg.ReportCaller)
+	traceLogger.SetLevel(logLevel)
+	traceLogger.SetReportCaller(cfg.ReportCaller)
 
 	//set log events to span
-	log.AddHook(otellogrus.NewHook(otellogrus.WithLevels(
+	traceLogger.AddHook(otellogrus.NewHook(otellogrus.WithLevels(
 		log.AllLevels...,
 	)))
 }

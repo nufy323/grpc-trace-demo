@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/uptrace/uptrace-go/uptrace"
+	"github.com/nufy323/grpc-demo/utrace/logger"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
@@ -14,23 +14,7 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/sdk/resource"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
 )
-
-func PrintTraceID(ctx context.Context) {
-	fmt.Println("trace:", TraceURL(trace.SpanFromContext(ctx)))
-}
-
-func TraceURL(span trace.Span) string {
-	switch {
-	case os.Getenv("UPTRACE_DSN") != "":
-		return uptrace.TraceURL(span)
-	case os.Getenv("OTEL_EXPORTER_JAEGER_ENDPOINT") != "":
-		return fmt.Sprintf("http://localhost:16686/trace/%s", span.SpanContext().TraceID())
-	default:
-		return fmt.Sprintf("http://localhost:16686/trace/%s", span.SpanContext().TraceID())
-	}
-}
 
 const defaultCollectorEndpoint = "localhost:4317"
 
@@ -76,7 +60,7 @@ func configureCommonExporter(ctx context.Context, serviceName string, endpoint s
 	otel.SetTextMapPropagator(propagation.NewCompositeTextMapPropagator(propagation.TraceContext{}, propagation.Baggage{}))
 
 	//set log exporter
-	logExporter := NewLogExporter()
+	logExporter := NewLogExporter(logger.Logger())
 	bsp := sdktrace.NewBatchSpanProcessor(logExporter)
 	tp.RegisterSpanProcessor(bsp)
 

@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/nufy323/grpc-demo/api"
+	"github.com/nufy323/grpc-demo/example/api"
 	"github.com/nufy323/grpc-demo/utrace"
 	"github.com/nufy323/grpc-demo/utrace/logger"
 
